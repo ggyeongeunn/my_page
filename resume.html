@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>resume</title>
+    <style>
+      body {
+        max-width: 1920px;
+        min-height: 100vh;
+        box-sizing: border-box;
+        background-color: #000;
+        text-align: center;
+        padding: 80px 20px;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: #d3d4d5;
+        transition: 0.2s;
+      }
+      a:hover {
+        color: #505050;
+      }
+      img {
+        width: 240px;
+        border-radius: 50%;
+      }
+      hr {
+        background-color: #676767;
+        border: none;
+        height: 1px;
+        margin: 50px 0;
+      }
+      .profile {
+        margin: 0;
+        padding: 0;
+        color: #6d6d6d;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      li p {
+        width: 250px;
+        margin: 20px 0;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      li span,
+      .profile li ul li {
+        color: #d3d4d5;
+        text-align: left;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      .profile li ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+      }
+      @media screen and (max-width: 1025px) {
+        .profile li ul {
+          width: 50%;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .profile li {
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+        .profile li p {
+          width: 100%;
+          text-align: left;
+          margin: 0;
+        }
+        .profile li span {
+          width: 100%;
+          margin-left: 20px;
+        }
+        .profile li ul {
+          width: 100%;
+          gap: 0;
+        }
+        .profile li ul > li {
+          margin-left: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="profile.gif" alt="profile" />
+    <hr />
+    <ul class="profile">
+      <li>
+        <p>Name</p>
+        <span>김경은</span>
+      </li>
+      <li>
+        <p>Age</p>
+        <span>31</span>
+      </li>
+      <li>
+        <p>MBTI</p>
+        <span>ISTJ</span>
+      </li>
+      <li>
+        <p>Work Experience</p>
+        <span
+          ><a href="https://ggyeongeunn.github.io/" target="_blank"
+            >웹 퍼블리셔 / 웹디자인
+          </a>
+        </span>
+      </li>
+      <li>
+        <p>Education</p>
+        <span>영남대학교 파이버시스템공학과</span>
+      </li>
+      <li>
+        <p>Skills</p>
+        <ul>
+          <li>HTML</li>
+          <li>css</li>
+          <li>scss</li>
+          <li>javascript</li>
+          <li>jquery</li>
+          <li>react</li>
+          <li>vue</li>
+          <li>illustrator</li>
+          <li>photoshop</li>
+          <li>figma</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
